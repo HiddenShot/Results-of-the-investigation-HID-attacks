@@ -1,0 +1,18 @@
+NOTES***
+In this investigation we use the most popular and used av's.
+All the av's shown in this investigation can detect some reverse shell (metasploit, nc, etc) but Windows Defender can't detect reverse shell created with nc if the version is old.
+All the av's shown in this investigation can detect files created with Veil Evasion, The FatRat and Msfvenom. Be careful!
+The payloads were tested in Windows 7, Windows 8 and Windows 10.
+The payloads were injected with diferentes tools for HID attacks as USB Rubber Ducky, Arduino Micro and DigiSpark.
+RMSociety is doing various investigations, over time these will be published.
+
+AV 			Can detect HID attacks?			Change the initial system configuration?
+
+Avast			NO					YES (You can't create persistence, you can use a Rootkit at kernel level)
+AVG			NO					YES (You can't create persistence, you can use a Rootkit at kernel level)
+Kaspersky		NO					YES (You can't create persistence, you can use a Rootkit at kernel level)
+Windows Defender	NO					NO
+Norton			NO					YES (You can't create persistence, you can use a Rootkit at kernel level)
+McAfee			NO					YES (You can't create persistence, you can use a Rootkit at kernel level)
+Panda			NO					YES (You can't create persistence, you can use a Rootkit at kernel level)
+BitDefender		NO					YES (You can't create persistence, you can use a Rootkit at kernel level)				
